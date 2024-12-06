@@ -17,7 +17,7 @@ export default function App({ Component, pageProps }) {
     const [userInformation, setUserInformation] = useState(null)
 
     const firebaseConfig = {
-        apiKey: "AIzaSyDj5DxSmJTTFKVNk0clqhQp56gjgtF6-jU",
+        apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
         authDomain: "exercise-six-792f8.firebaseapp.com",
         projectId: "exercise-six-792f8",
         storageBucket: "exercise-six-792f8.firebasestorage.app",
